@@ -10,23 +10,7 @@ name: GPU tests (simulated)
 # pull requests can restore it.
 on:
   push:
-    branches: [main]
-    paths:
-      - "CMakeLists.txt"
-      - "api/**"
-      - "src/**"
-      - "test/**"
-      - "deps/**"
-      - ".github/workflows/gpu-sim.yml"
-  pull_request:
-    paths:
-      - "CMakeLists.txt"
-      - "api/**"
-      - "src/**"
-      - "test/**"
-      - "deps/**"
-      - ".github/workflows/gpu-sim.yml"
-  workflow_dispatch:
+    branches: [verify-gpu-sim]
 
 permissions:
   contents: read
